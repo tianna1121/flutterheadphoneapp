@@ -1,3 +1,4 @@
+import 'package:bubble_bottom_bar/bubble_bottom_bar.dart';
 import 'package:flutter/material.dart';
 import 'customIcons.dart';
 import 'style.dart';
@@ -191,14 +192,14 @@ class _MyAppState extends State<MyApp> {
           elevation: 0,
           currentIndex: _currentIndex,
           onTap: changePage,
-          items: <BubbleBottemBarItems>[
+          items: <BubbleBottomBarItem>[
             BubbleBottomBarItem(
                 backgroundColor: Colors.black,
                 icon: Icon(
                   Icons.home,
                   color: Colors.black,
                 ),
-                activation: Icon(Icons.home, color: Colors.white),
+                activeIcon: Icon(Icons.home, color: Colors.white),
                 title: Text(
                   "Home",
                   style: bottomBarItemStyle,
@@ -209,7 +210,7 @@ class _MyAppState extends State<MyApp> {
                   CustomIcons.products,
                   color: Colors.black,
                 ),
-                activation: Icon(CustomIcons.products, color: Colors.white),
+                activeIcon: Icon(CustomIcons.products, color: Colors.white),
                 title: Text(
                   "Shop",
                   style: bottomBarItemStyle,
@@ -220,7 +221,7 @@ class _MyAppState extends State<MyApp> {
                   Icons.favorite_border,
                   color: Colors.black,
                 ),
-                activation: Icon(Icons.favorite_border, color: Colors.white),
+                activeIcon: Icon(Icons.favorite_border, color: Colors.white),
                 title: Text(
                   "Favorate",
                   style: bottomBarItemStyle,
@@ -231,7 +232,7 @@ class _MyAppState extends State<MyApp> {
                   Icons.person,
                   color: Colors.black,
                 ),
-                activation: Icon(Icons.person, color: Colors.white),
+                activeIcon: Icon(Icons.person, color: Colors.white),
                 title: Text(
                   "Profile",
                   style: bottomBarItemStyle,
